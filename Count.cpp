@@ -4,7 +4,27 @@
 using namespace std;
 
 void count_zeros_ones(int arr[], int size, int& count_zeros, int& count_ones) {
-    // Write Function Only
+    
+count_zeros = 0;
+    count_ones = 0;
+    for (int i = 0; i < size; i++) 
+    {
+        if (arr[i] == 0)
+         {
+            (count_zeros)++;
+        }
+         else if (arr[i] == 1)
+         {
+            (count_ones)++;
+        }
+    }
+     printf("Number of zeroes in the array: %d\n", count_zeros);
+    printf("Number of ones in the array: %d\n", count_ones);
+    
+
+
+
+
 
 
     
