@@ -4,8 +4,19 @@
 
 using namespace std;
 
-bool is_palindrome(int num) {
-    // Write Function Only
+bool is_palindrome(int num) 
+{
+    
+    int reversedNum = 0;
+    int originalNum = num;
+    
+    while (num > 0) {
+        int digit = num % 10;
+        reversedNum = reversedNum * 10 + digit;
+        num /= 10;
+    }
+    
+    return originalNum == reversedNum;
 }
 
 
