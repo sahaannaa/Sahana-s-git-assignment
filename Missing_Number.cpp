@@ -4,8 +4,15 @@
 
 using namespace std;
 
-int find_missing_number(int arr[], int size) {
-        //   Write Function Only
+int find_missing_number(int arr[], int size) 
+{
+         int number = (size + 1) * (size + 2) / 2; 
+    for (int i = 0; i < size; i++) 
+    {
+        number -= arr[i]; 
+    }
+    printf("The missing number in the array is: %d\n", number);
+
 
 
 
